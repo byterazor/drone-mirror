@@ -1,6 +1,6 @@
 FROM alpine:latest 
 
-RUN apk update && apk add --no-cache tini bash git
+RUN apk update && apk add --no-cache tini bash git gawk 
 
 ADD plugin.sh /
 RUN chmod a+x /plugin.sh

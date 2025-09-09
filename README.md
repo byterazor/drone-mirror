@@ -3,7 +3,7 @@
 
 ## Description
 
-This is a [Drone CI](https://www.drone.io/) plugin to mirror a public repository to your internal gitea/gitlab instance.
+This is a [Drone CI](https://www.drone.io/) plugin to mirror a public repository to your internal gitea/gitlab instance. **At the moment only HTTP/HTTPS URLS are supported.**
 
 ### Requirements
     - drone
@@ -22,8 +22,12 @@ This is very early work and may and may not work for you yet.
 
 ### Settings Variables
 
-- ```FROM```- the URL of the repository to mirror.  
+- ```FROM```- the URL of the repository to mirror. 
+- ```FROM_USER```- the user to authenticate at FROM 
+- ```FROM_PASS``` - the password to authenticate at FROM  
 - ```TO```- the URL of the repository to mirror to.
+- ```TO_USER``` - the user to authenticate at TO 
+- ```TO_PASS``` - the password to authenticate at TO  
 
 ## Supported Architectures
 - amd64
