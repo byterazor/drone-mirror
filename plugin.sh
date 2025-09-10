@@ -28,5 +28,6 @@ cd drone-mirror
 git clone --mirror ${PLUGIN_FROM} mirror
 cd mirror
 git push --all ${PLUGIN_TO}
+git push --tags ${PLUGIN_TO}
 cd ../..
 rm -rf drone-mirror
